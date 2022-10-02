@@ -1,0 +1,15 @@
+package lesson.three.ht;
+
+public class GroupOverflowException extends Exception {
+
+	public GroupOverflowException(String message) {
+		super(message);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return "GroupOverflowException [toString()=" + super.toString() + "]";
+	}
+
+}

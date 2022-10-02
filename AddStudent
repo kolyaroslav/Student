@@ -1,0 +1,36 @@
+package lesson.three.ht;
+import java.util.Scanner;
+public class AddStudent {
+	public static Student ScannerStudents() {
+
+		// TODO Auto-generated method stub
+		Student student = new Student();
+		Scanner sc = new Scanner(System.in);
+		Scanner sc1 = new Scanner(System.in);
+		System.out.println("Input student Name");
+		student.setName(sc.nextLine());
+		System.out.println("Input student Surname");
+		student.setLastName(sc.nextLine());
+		System.out.println("Input student Id");
+		student.setId(sc.nextInt());
+
+		System.out.println("Input student gender :");
+		System.out.println("1 - Male, 2 - Female");
+
+		int gender = sc.nextInt();
+		if (gender == 1) {
+			student.setGender(Gender.Male);
+		}
+		if (gender == 2) {
+			student.setGender(Gender.Female);
+		} if (gender<1 && gender>2) {
+			System.out.println("Error");
+		}
+		System.out.println("Enter groupname");
+		student.setGroupName(sc1.nextLine());
+
+		return student;
+
+	}
+
+}

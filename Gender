@@ -1,0 +1,8 @@
+package lesson.three.ht;
+
+public enum Gender {
+Male, Female;
+	
+
+	
+}
